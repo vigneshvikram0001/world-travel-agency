@@ -325,6 +325,7 @@ form button{
     }
     .active{
         display: flex;
+        transition: .5s;
     }
     .search-box input{
         width: 70vmin;
