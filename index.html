@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/184ce453d9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar" >
+            <h1 class="brand">World Travel</h1>
+            <ul class="button_icons">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#travel">Travel</a></li>
+                <li><a href="#form">Form</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" id="toggle"></i>
+        </nav>
+    </header>
+
+    <section class="showcase" id="home">
+        <div class="text">
+                <h2>Explore the World in your way</h2>
+                <p>Create Memories that you won't forget. You only live once, so don't waste your time</p>
+                <button id="search">Learn More..</button>
+        </div>
+    </section>
+
+    <section class="search-box" id="search">
+        <form action="">
+            <input type="text" placeholder="Search Here">
+            <button>Search</button>
+        </form>
+    </section>
+
+    <section class="img-cards" id="travel">
+            <div class="card1 card">
+                <img src="./image/mcloud mountain.jpg" alt="">
+                <h1>Plan Destination</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+
+            <div class="card2 card">
+                <img src="./image/mmountain3.jpg" alt="">
+                <h1>Shop Dresses</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+
+            <div class="card3 card">
+                <img src="./image/river sitting.jpg" alt="">
+                <h1>Fly Cheap</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+    </section>
+
+    <section class="detail-box" id="contact">
+        <div class="contact">
+            <div class="b1">
+                <h1>Contact Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam incidunt consequuntur dolorum hic harum id porro, quisquam praesentium reiciendis eligendi tenetur necessitatibus cupiditate cum. Dolores iste modi soluta exercitationem expedita!</p>
+            </div>
+            <div class="b2">
+                <h2>Address</h2>
+                <address>
+                    Travel Agency,  <br>
+                    6th Street,  <br>
+                    Kongu Main Road, <br>
+                    Chennai-641601 
+                </address>
+            </div>
+        </div>
+
+        <div class="form-box" id="form">
+            <h2>Please Fill This Form</h2>
+            <form action="">
+                <label for="user-name">Enter Your Name</label>
+                <input type="text"placeholder="User name" id="user-name">
+                <label for="email-id">Enter Your Email-Id</label>
+                <input type="text"placeholder="Email Id" id="email-id">
+                <label for="mobile-no">Enter Mobile Number</label>
+                <input type="text"placeholder="Enter Valid mobile number" id="mobile-no">
+                <label for="place">Enter Place</label>
+                <input type="text"placeholder="Your Destination" id="place">
+                <button>Submit</button>
+                
+            </form>
+        </div>
+
+    </section>
+
+    <section class="foot">
+        <footer>Copyright &copy; 2022 Explore World</footer>
+    </section>
+
+    
+</body>
+<script>
+    var bar = document.querySelector('#toggle'); 
+    var content = document.querySelector('.button_icons')
+
+    bar.addEventListener('click', ()=>{
+        content.classList.toggle("active");
+    })
+</script>
+</html>
