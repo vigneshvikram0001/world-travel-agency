@@ -306,7 +306,7 @@ form button{
         font-family: verdana;
     }
     .navbar ul{
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -324,7 +324,7 @@ form button{
         font-size: 20px;
     }
     .active{
-        display: none;
+        display: flex;
     }
     .search-box input{
         width: 70vmin;
